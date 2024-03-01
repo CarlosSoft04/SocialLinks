@@ -1,0 +1,165 @@
+@keyframes changeBackground {
+    0% {
+        background-color: black; /* Cor inicial do plano de fundo */
+    }
+    25% {
+        background-color:darkgray /* Cor intermediária 1 do plano de fundo */
+    }
+    75% {
+        background-color: darkgray /* Cor intermediária 2 do plano de fundo */
+    }
+    100% {
+        background-color: black; /* Cor final do plano de fundo */
+    }
+    
+    /* Curva de timing personalizada */
+}
+
+
+
+.icons-social a {
+    color: aliceblue; /* Cor dos ícones */
+}
+
+.icons-social a svg path {
+    fill: aliceblue; /* Cor dos ícones */
+}
+
+
+main {
+    background-size: cover; /* Para cobrir todo o elemento */
+    background-position: center; /* Para centralizar a imagem */
+    
+    color: aliceblue; /* Cor do texto */
+    animation: changeBackground 5s linear infinite; /* Animação */
+}
+
+.icons-social a {
+    animation: fadeIn 1s ease-in-out;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.intro {
+    animation: fadeInUp 1s ease forwards;
+}
+
+.tagline {
+    animation: slideInLeft 1s ease forwards;
+}
+
+.icons-social a {
+    animation: bounceIn 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+html {
+	font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 576px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 992px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 20px;
+	}
+}
+
+.icons-social i {
+	font-size: 3em;
+}
+
+/* Custom Styles */
+
+main {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: center;
+	padding: 0 30px;
+	text-align: center;
+}
+
+main > .intro {
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 3.75em;
+	font-weight: 600;
+}
+
+main > .tagline {
+	font-size: 1.5rem;
+	margin: 1.5rem 0;
+	font-weight: 100;
+}
+
+.icons-social i {
+	padding: 10px;
+}
+
+.icons-social a {
+  text-decoration: none;
+}
+
+.devto {
+	margin-bottom: -0.20rem;
+}
+
+.devto svg {
+	margin-bottom: -0.20rem;
+	margin-left: 0.675rem;;
+	width: 2.65rem;
+	height: 2.65rem;
+}
+
+
+
+
+
+
